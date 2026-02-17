@@ -1,0 +1,53 @@
+{
+  "name": "show-git-stages-count",
+  "displayName": "VSCode Show Git Stages Count",
+  "description": "Display git staged and unstaged file counts in the status bar",
+  "author": "Hamada Sayed",
+  "publisher": "hsayed",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "SCM Providers"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "show-git-stages-count.refresh",
+        "title": "Refresh Git Stages Count"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.74.0",
+    "@vscode/test-electron": "^2.5.2",
+    "typescript": "^4.9.4"
+  },
+  "bugs": {
+    "url": "https://github.com/hsayed21/show-git-stages-count/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hsayed21/show-git-stages-count"
+  },
+  "keywords": [
+    "git",
+    "scm",
+    "source control",
+    "change count"
+  ],
+  "license": "MIT"
+}
+
