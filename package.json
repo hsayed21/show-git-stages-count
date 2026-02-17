@@ -6,7 +6,7 @@
   "publisher": "hsayed",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.74.0"
+    "vscode": "^1.93.0"
   },
   "categories": [
     "SCM Providers"
@@ -26,14 +26,15 @@
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./"
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
-    "@types/node": "16.x",
-    "@types/vscode": "^1.74.0",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.93.0",
     "@vscode/test-electron": "^2.5.2",
-    "typescript": "^4.9.4"
+    "typescript": "^5.5.4"
   },
   "bugs": {
     "url": "https://github.com/hsayed21/show-git-stages-count/issues"
